@@ -3,14 +3,19 @@ from django.contrib import admin
 from django.urls import path
 from . import settings
 from django.conf.urls.static import static
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('takephoto/', takePhoto, name="takephoto"), # Standardized path to lowercase and added trailing slash
-    path('', takePhoto, name="home"),
-    path('compress/', compressing, name="compress"), # Added trailing slash
-    path('resizing/', resizing, name="resizing"), # Added trailing slash
-    path('rotatephoto/', rotate, name="rotatephoto"), # Standardized path to match name and added trailing slash
-    path('signin/', signin, name="signin"), # Changed path to 'signin' for consistency
-    path('crop/', Crop, name="crop"), # Added trailing slash
+    path("admin/", admin.site.urls),
+    path("takephoto/", takePhoto, name="takephoto"),
+    path("", takePhoto, name="home"),
+    path("compress/", compressing, name="compress"),
+    path("resizing/", resizing, name="resizing"),
+    path("rotatephoto/", rotate, name="rotatephoto"),
+    path("brightness/", brightness, name="brightness"),
+    path("contrast/", contrast, name="contrast"),
+    path("blur/", blur, name="blur"),
+    path("convert/", convert_file, name="convert"),
+    path("watermark/", watermark, name="watermark"),
+    path("crop/", Crop, name="crop"),
 ]
-urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

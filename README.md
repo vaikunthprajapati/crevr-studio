@@ -1,189 +1,148 @@
+# CREVR STUDIO
 
-👉 [Crevr_Tool](https://github.com/pranavsahu005/Crevr_Tool)
-
-# ⚙️ Crevr Tool
-
-Crevr Tool is an advanced **web-based image processing and editing application** built with **Django** and **HTML/CSS**. It is inspired by Canva, providing simple yet powerful tools to help users upload, edit, and enhance images directly from the browser.
+A web-based image processing platform built with Django and OpenCV that allows users to perform common computer vision and image manipulation operations directly from the browser.
 
 ---
 
-## 🚀 Key Features
-- 🖼️ **Upload & Manage Images** seamlessly
-- 🎨 **Image Editing Tools**  
-  - Convert to Grayscale  
-  - Compress Image Files  
-  - Resize or Rotate Images  
-  - Crop Selected Areas
-- 💾 **Automatic Local Storage** using Django’s media management
-- 👤 **User Authentication (Signin Page)**
-- ⚡ **Fast, Lightweight & Responsive UI**
-- 🧩 **Organized Project Architecture** with reusable templates and static assets
+## Overview
+
+CREVR STUDIO was developed to explore practical computer vision concepts using OpenCV while building a complete full-stack application with Django.
+
+The platform provides a collection of image processing tools through a clean web interface, enabling users to upload, transform, and download images without requiring any external software.
 
 ---
 
-## 🧠 Tech Stack
+## Features
 
-| Component | Technology |
-|------------|-------------|
-| Backend | Django (Python) |
-| Frontend | HTML, CSS |
-| Database | SQLite3 |
-| Image Processing | Pillow |
-| Version Control | Git & GitHub |
-| Deployment | Localhost / GitHub Pages (for static preview) |
+* Grayscale Conversion
+* Image Compression
+* Image Resizing
+* Image Rotation
+* Perspective Crop Tool
+* Brightness Adjustment
+* Contrast Adjustment
+* Gaussian Blur
+* Image Format Conversion (JPG, PNG, WEBP)
+* Watermark Generation
 
 ---
 
-## 🗂️ Project Structure
-```
+## Technologies Used
 
-Crevr Tool/
+### Backend
+
+* Python
+* Django
+* OpenCV
+* NumPy
+
+### Frontend
+
+* HTML5
+* CSS3
+* JavaScript
+
+### Storage
+
+* Django FileSystemStorage
+
+---
+
+## Computer Vision Concepts Demonstrated
+
+This project implements several core OpenCV operations, including:
+
+* Color Space Conversion
+* Geometric Transformations
+* Perspective Transformations
+* Image Filtering
+* Pixel Intensity Manipulation
+* File Format Encoding
+* Image Compression Techniques
+
+---
+
+## Project Structure
+
+```text
+CREVR_TOOL_MAIN
+│
+├── screenshots/
 ├── tools/
 │   ├── grayscale/
-│   │   ├── **init**.py
-│   │   ├── settings.py
-│   │   ├── urls.py
-│   │   ├── views.py
-│   │   ├── templates/
-│   │   └── static/
+│   ├── static/
+│   ├── templates/
 │   ├── manage.py
-│   └── db.sqlite3
-└── README.md
-
-````
+│   └── ...
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
 ---
 
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone this repository
-```bash
-git clone https://github.com/pranavsahu005/Crevr_Tool.git
-````
-
-### 2️⃣ Navigate to project directory
+## Installation
 
 ```bash
-cd Crevr_Tool/tools
-```
+git clone https://github.com/your-username/crevr-studio.git
 
-### 3️⃣ Create & activate virtual environment
+cd crevr-studio/tools
 
-```bash
-python -m venv myenv
-myenv\Scripts\activate
-```
+python -m venv venv
 
-### 4️⃣ Install required dependencies
+venv\Scripts\activate
 
-```bash
-pip install django pillow
-```
-```numpy and open cv
-pip install opencv-python
-```
+pip install -r ../requirements.txt
 
-### 5️⃣ Run the development server
-
-```bash
 python manage.py runserver
 ```
 
-### 6️⃣ Open your browser
+Open:
 
-```
-http://127.0.0.1:8000/
-```
-
----
-
-## 💡 Future Enhancements
-
-* 🧰 Add advanced filters (brightness, contrast, blur)
-* ☁️ Integrate cloud storage (AWS, Firebase)
-* 📱 Improve mobile responsiveness with Tailwind CSS
-* 💾 Enable project save & download functionality
-* ✨ Add drag-and-drop editor and multi-image workspace
-
----
-
-## 📸 Screenshots
-
-*(Add your screenshots here)*
-Recommended path:
-
-```
-tools/static/image/
-```
-
-Example (Markdown Preview):
-
-```markdown
-![Editor Interface](tools/static/image/sample_editor.png)
-![Grayscale Output](tools/static/image/sample_gray.png)
+```text
+http://127.0.0.1:8000
 ```
 
 ---
 
-## 🤝 Contributing
+## Screenshots
 
-We welcome contributions from the community!
-To contribute:
+### Home Page
 
-1. Fork the repo
-2. Create your feature branch (`git checkout -b feature-name`)
-3. Commit your changes (`git commit -m "Added new feature"`)
-4. Push to your branch (`git push origin feature-name`)
-5. Open a Pull Request
+![Home](screenshots/home.png)
 
----
+### Grayscale Tool
 
-## 🧑‍💻 Author
+![Grayscale](screenshots/grayscale.png)
 
-**👋 Pranav Sahu**
-💼 Developed with ❤️ using Django
-🌐 [GitHub Profile](https://github.com/pranavsahu005)
+### Resize Tool
 
----
+![Resize](screenshots/resize.png)
 
-## 🔁 Quick Update Command
+### Crop Tool
 
-Whenever you make changes locally and want to update GitHub:
+![Crop](screenshots/crop.png)
 
-```bash
-cd "C:/Users/user/OneDrive/Desktop/Crevr Tool" && git add . && git commit -m "Auto update" && git push origin main
-```
+### Watermark Tool
+
+![Watermark](screenshots/watermark.png)
 
 ---
 
-⭐ **If you like this project, consider giving it a star on GitHub!**
+## Future Improvements
 
-````
+* Drag-and-drop uploads
+* Side-by-side image comparison
+* Batch image processing
+* User authentication
+* Cloud deployment
 
 ---
 
-✅ **Next steps:**
-1. Copy all of the above.  
-2. Open your project folder → `Crevr Tool`  
-3. Create or replace file `README.md`  
-4. Save it.  
-5. Run:
-   ```bash
-   git add README.md
-   git commit -m "Updated README for Crevr Tool"
-   git push origin main
-````
+## Author
 
-🔗 Check now:
+**Vaikunth Prajapati**
 
-Open → https://github.com/pranavsahu005/Crevr_Tool
-
-You’ll see all your folders and files uploaded correctly.
-
-⚙️ For future updates:
-
-Whenever you make new changes or add files, just run this one-line update command:
-```
-cd "C:/Users/user/OneDrive/Desktop/Crevr Tool" && git add . && git commit -m "Auto update" && git push origin main
-```
-
+LinkedIn:
+https://www.linkedin.com/in/vaikunthprajapati

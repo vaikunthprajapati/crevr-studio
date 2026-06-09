@@ -1,0 +1,10 @@
+tools/static/gray/.gitkeep
+tools/static/resize/.gitkeep
+tools/static/rotate/.gitkeep
+tools/static/compress/.gitkeep
+tools/static/crop/.gitkeep
+tools/static/blur/.gitkeep
+tools/static/brightness/.gitkeep
+tools/static/contrast/.gitkeep
+tools/static/converted/.gitkeep
+tools/static/watermark/.gitkeep
