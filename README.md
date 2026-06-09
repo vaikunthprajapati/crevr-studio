@@ -82,6 +82,10 @@ CREVR_TOOL_MAIN
 
 ---
 
+## Status
+
+Project completed and maintained for learning and portfolio purposes.
+
 ## Installation
 
 ```bash
