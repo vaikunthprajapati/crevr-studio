@@ -104,32 +104,6 @@ Open:
 http://127.0.0.1:8000
 ```
 
----
-
-## Screenshots
-
-### Home Page
-
-![Home](screenshots/home.png)
-
-### Grayscale Tool
-
-![Grayscale](screenshots/grayscale.png)
-
-### Resize Tool
-
-![Resize](screenshots/resize.png)
-
-### Crop Tool
-
-![Crop](screenshots/crop.png)
-
-### Watermark Tool
-
-![Watermark](screenshots/watermark.png)
-
----
-
 ## Future Improvements
 
 * Drag-and-drop uploads
