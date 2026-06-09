@@ -1,3 +1,6 @@
+![Crevr_Thumbnail](Crevr_Thumbnail.png)
+<img src="Crevr_Thumbnail.png" width="100%">
+
 # CREVR STUDIO
 
 A web-based image processing platform built with Django and OpenCV that allows users to perform common computer vision and image manipulation operations directly from the browser.
