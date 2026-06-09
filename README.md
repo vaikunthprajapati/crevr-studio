@@ -1,5 +1,4 @@
-![Crevr_Thumbnail](Crevr_Thumbnail.png)
-<img src="Crevr_Thumbnail.png" width="100%">
+<img src="banner.png" width="100%">
 
 # CREVR STUDIO
 
