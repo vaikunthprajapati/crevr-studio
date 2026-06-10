@@ -26,6 +26,7 @@ def process_grayscale(uploaded_file):
     gray_image = convert_to_grayscale(filepath)
 
     save_path = os.path.join(fs.location, "../../static/gray")
+    os.makedirs(save_path, exist_ok=True)
 
     new_filename = f"gray_{filename}.jpg"
 
@@ -47,6 +48,7 @@ def process_resize(uploaded_file, scale):
     resized_image = resize_image(filepath, scale)
 
     save_path = os.path.join(fs.location, "../../static/resize")
+    os.makedirs(save_path, exist_ok=True)
 
     new_filename = f"resize_{filename}.jpg"
 
@@ -68,6 +70,7 @@ def process_rotate(uploaded_file, degree):
     rotated_image = rotate_image(filepath, degree)
 
     save_path = os.path.join(fs.location, "../../static/rotate")
+    os.makedirs(save_path, exist_ok=True)
 
     new_filename = f"rotate_{filename}.jpg"
 
@@ -89,6 +92,7 @@ def process_compress(uploaded_file):
     compressed_image = compress_image(filepath)
 
     save_path = os.path.join(fs.location, "../../static/compress")
+    os.makedirs(save_path, exist_ok=True)
 
     new_filename = f"comp_{filename}.jpg"
 
